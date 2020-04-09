@@ -1,4 +1,4 @@
-export class Negociacao {
+/*export class Negociacao {
 
     private _data: Date;
     private _quantidade: number;
@@ -31,5 +31,15 @@ export class Negociacao {
     get volume() {
 
         return this._quantidade * this._valor;
+    }
+}*/
+
+//Vou ter acesso as variaveis, porem não consigo alterar as variaveis
+//READONLY
+export class Negociacao{
+    constructor(readonly data:Date, readonly quantidade: number, readonly valor: number){}
+
+    get volume(){
+        return this.quantidade * this.valor;
     }
 }

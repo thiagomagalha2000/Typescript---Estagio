@@ -7,8 +7,8 @@ export class Negociacoes {
     adiciona(negociacao: Negociacao): void{
         this._negociacoes.push(negociacao);
     }
-
     paraArray(): Negociacao[] {
-        return [].concat(this._negociacoes);
+        //return [].concat(this._negociacoes);
+        return ([] as Negociacao[]).concat(this._negociacoes);
     }
 }
